@@ -28,7 +28,7 @@ public class GazeCursor : MonoBehaviour {
 	void Update ()
     {
         var lastGazePoint = gazePointDataComponent.LastGazePoint;
-
+        
         if (lastGazePoint.IsValid)
         {
             if (Vector2.Distance(lastPoint, lastGazePoint.Screen) > threshold)
